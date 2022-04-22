@@ -1,0 +1,247 @@
+.disc p {
+    text-align: center;
+    justify-content: center;
+    font-size: 20 px;
+    color: #85929E;
+  }
+
+  .container img {
+    width: 250px;
+    height: 300px;
+    margin: 25px;
+    border-radius: 10px;
+    box-shadow: 3px;
+    /* filter: invert(1);
+          transform: scale(0.5);
+         transition: 0.5s;
+         list-style: none; */
+  }
+
+  #container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .container {
+    position: relative;
+    width: 40%;
+    max-width: 300px;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 235px;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 40px;
+    padding: 8px;
+    text-align: center;
+    margin-left: 25px;
+  }
+
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+  @media (max-width: 800px) {
+
+    .container,
+    .container header {
+      padding: 40px;
+      margin-right: 5px;
+      display: fixed;
+      margin-right: 150px;
+    }
+
+    .text {
+      font-size: 3em;
+    }
+
+    .text {
+      font-size: 2em;
+    }
+  }
+
+  /* call function */
+  .collapsible {
+    background-color: #fff;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active,
+  .collapsible:hover {
+    background-color: #fff;
+  }
+
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  .touch h2{
+    text-align: center;
+    margin-top: 10px;
+
+  }
+  .touch  p{
+    margin-left: 500px;
+  }
+  .contactform{
+      background-color: aqua;
+      height: 320px;
+      width: 350px;
+      text-align: center;
+      align-items: center;
+      margin-left: 450px;
+      border-radius: 15px ;
+  }
+  .contac {
+      size: 20px;
+      margin-top: 100px;
+      padding: 100px;
+      margin: 100px;
+      /* border: 2px solid #f0f0f0;
+      border-radius: 4px;
+      display: block;
+      font-family: inherit;
+      font-size: 14px;
+      padding: 10px;
+      width: 100%; */
+  }
+  .contac  i{
+      color: #fff;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left middle middle right right' 
+      'footer footer footer footer footer footer';
+      transition: 0.3s;
+  }
+ 
+  .left,
+.middle,
+.right {
+  padding: 0 10px;
+  height: 200px;
+  margin: 100px;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
+}
+.left h1,
+.middle h1,
+.right h1{
+  text-decoration: underline;
+  margin-top: -8px;
+}
+.left {
+  grid-area: left;
+  /* height: 200px; */
+  width: 250px;
+  margin: 100px;
+  background-color:#fff;
+  transition: 0.3s;
+
+}
+.grid-container:hover{
+  color: aquamarine;
+}
+.middle {
+  grid-area: middle;
+  margin: 100px;
+  background-color:#fff;
+
+}
+.right {
+  grid-area: right;
+  margin: 100px;
+  background-color:#fff;
+
+}
+@media (max-width: 800px){
+  .grid-container,
+  .left{
+    height: 250px;
+    width: 230px;
+    margin-top: 8px;
+    display: fixed;
+    /* margin-left: 250px; */
+  }
+  .grid-container,
+  .middle{
+    height: 250px;
+    width: 230px;
+    display: fixed;
+
+    /* margin-top: 250px; */
+    /* margin-left: -90%; */
+  }
+  .touch h2{
+    margin-top: 10px;
+    display: fixed;
+
+  }
+  .grid-container,
+  .right{
+     height: 250px;
+    width: 230px;
+    margin-top: 350px;
+    display: fixed;
+
+    /* margin-left: 70%; 
+    /* margin-right: 80%; */
+    /* visibility: hidden; */
+  }
+  .touch,
+ .touchmap{
+  height: 250px;
+  width: 230px;
+  margin-left: -450px;
+  display: fixed;
+
+
+  }
+  .contactform,
+  .contact{
+    margin-left: -40px;
+    margin-top: 70px;
+    display: fixed;
+
+  }
+
+
+
+}
+.name p{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 9px;
+}
+.name p span{
+  color: brown;
+}
